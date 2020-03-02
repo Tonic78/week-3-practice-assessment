@@ -6,22 +6,17 @@ export default function Homepage() {
   return (
     <div>
       <h1>Welcome to AMS GPs</h1>
+      <OpenClose />
       <p>
-        we are
-        <OpenClose />
-      </p>
-      <p>To make an appointment</p>
-      <p>call 020 555 5555</p>
-      <p>
-        <button>
-          <Link to="/doctorschedule"> Who is on duty?</Link>
-        </button>
+        <Link to="/doctorschedule">
+          <button>Who is on duty?</button>
+        </Link>
       </p>
       <br></br>
       <p>
-        <button>
-          <Link to="/patientsignup"> I am a new patient</Link>
-        </button>
+        <Link to="/patientsignup">
+          <button>I am a new patient</button>
+        </Link>
       </p>
     </div>
   );

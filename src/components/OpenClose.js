@@ -6,5 +6,13 @@ export default function OpenClose() {
 
   const open = time > 8 && time < 17 ? "open" : "close";
 
-  return <h3>{open}</h3>;
+  return (
+    <div>
+      <p>
+        we are: <b>{open}</b>
+      </p>
+      <p> To make an appointment</p>
+      <p>call 020 555 5555</p>
+    </div>
+  );
 }
