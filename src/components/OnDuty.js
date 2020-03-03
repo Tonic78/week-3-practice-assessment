@@ -20,7 +20,7 @@ export default function OnDuty() {
     duty();
   }, []);
 
-  console.log("WHAT IS DOCTORINFO", doctorInfo);
+  // console.log("WHAT IS DOCTORINFO", doctorInfo);
 
   const schedule = doctorInfo.map(doctor => {
     return (

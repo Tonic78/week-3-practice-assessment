@@ -7,8 +7,10 @@ export default function PatientSignup() {
   const [phone, set_Phone] = useState("");
   const [gender, set_Gender] = useState("");
   const [dateofbirth, set_Dateofbirth] = useState("");
+  const [addpatient, set_AddPatient] = useState("");
 
-  const submitPatient = () => {
+  const submitPatient = event => {
+    event.preventDefault();
     console.log(
       "WHAT IS SUBMITTED:",
       firstname,
@@ -18,12 +20,19 @@ export default function PatientSignup() {
       gender,
       dateofbirth
     );
+    set_Firstname("");
+    set_Lastname("");
+    set_Email("");
+    set_Phone("");
+    set_Gender("");
+    set_Dateofbirth("");
+    set_AddPatient("new patient added");
   };
 
   return (
-    <div className="PatientSignup">
+    <div>
       <h1>Patient signup</h1>
-      <form>
+      <form onSubmit={submitPatient}>
         <p>
           <label>first name </label>
           <input
@@ -96,8 +105,10 @@ export default function PatientSignup() {
             type="date"
           />
         </p>
+        <input type="submit" />
       </form>
-      <button onClick={submitPatient}>Submit</button>
+
+      <p>{addpatient}</p>
     </div>
   );
 }
