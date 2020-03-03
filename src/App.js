@@ -6,6 +6,7 @@ import DoctorSchedule from "./components/DoctorSchedule";
 import PatientSignup from "./components/PatientSignup";
 import PatientDatabase from "./components/PatientDatabase";
 import NavBar from "./components/NavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

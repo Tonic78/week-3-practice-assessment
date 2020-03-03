@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import OpenClose from "./OpenClose";
+import { Button } from "react-bootstrap";
 
 export default function Homepage() {
   return (
@@ -9,13 +10,13 @@ export default function Homepage() {
       <OpenClose />
       <p>
         <Link to="/doctorschedule">
-          <button>Who is on duty?</button>
+          <Button variant="success">Who is on duty?</Button>
         </Link>
       </p>
       <br></br>
       <p>
         <Link to="/patientsignup">
-          <button>I am a new patient</button>
+          <Button variant="success">I am a new patient</Button>
         </Link>
       </p>
     </div>
