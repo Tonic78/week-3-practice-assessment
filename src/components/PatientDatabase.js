@@ -6,7 +6,7 @@ export default function PatientDatabase() {
   const [patientInfo, set_patientInfo] = useState([]);
   // console.log("WHAT IS THE STATE:", patientInfo);
   const [doctor, set_Doctor] = useState([]);
-  const [selectedDocterId, set_selectedDocterId] = useState(null);
+  const [selectedDocterId, set_selectedDocterId] = useState("all patients");
 
   console.log("WHAT IS SELECTED DOCTOR ID:", selectedDocterId);
 
